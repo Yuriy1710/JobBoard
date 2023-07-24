@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+
+  <h1 class="title">{{ job.title }}</h1>
+  <p class="is-size-4">{{ job.short_description }}</p>
+  <p class="is-size-5">{{ job.long_description }}</p>
+
+  <a href="{% url 'apply_for_job' job.id %}" class="button is-success">Apply for Job</a>
+
+{% endblock %}
